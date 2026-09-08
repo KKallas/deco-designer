@@ -2,21 +2,27 @@
   "name": "deco-designer",
   "version": "0.1.0",
   "private": true,
-  "description": "Simple 3D designer for Decolight products: 2D curves -> aluminium pipes, lofted areas with PVC/garland, and LED light strings.",
+  "description": "Simple 3D designer for Decolight products: 2D curves bent from aluminium profiles, with limitations checked live.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "deco": "node scripts/deco.mjs"
   },
   "dependencies": {
+    "fzstd": "^0.1.1",
     "three": "^0.185.1"
   },
   "devDependencies": {
+    "@types/node": "^26.3.0",
     "@types/three": "^0.185.4",
     "@webgpu/types": "^0.1.72",
     "typescript": "^7.0.2",
-    "vite": "^8.2.2"
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
   }
 }

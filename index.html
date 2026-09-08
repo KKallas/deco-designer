@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deco Designer</title>
-    <style>
-      html, body { margin: 0; height: 100%; overflow: hidden; background: #1a1a1f; color: #ddd; font-family: system-ui, sans-serif; }
-      #app { width: 100%; height: 100%; }
-      #hud { position: fixed; top: 12px; left: 12px; font-size: 13px; opacity: 0.8; pointer-events: none; }
-    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <div id="hud">Deco Designer — WebGPU</div>
+    <div id="app">
+      <header id="topbar"></header>
+      <main id="viewport"></main>
+      <aside id="panel"></aside>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
